@@ -1,0 +1,87 @@
+@use 'colors' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-padding-top: 50px;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	font-size: 1.6rem;
+	background-color: $bg-color;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: min(100%, 1200px);
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	// padding: 0.5em;
+	background-color: $bg-color;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	z-index: 999;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.logo {
+		&-image {
+			width: 50px;
+		}
+	}
+
+	.navbar {
+		&__list {
+			list-style: none;
+
+			&--dropdown {
+				display: none;
+				position: absolute;
+				left: 0;
+				width: 180px;
+				background-color: $bg-color;
+
+				li {
+					width: 100%;
+					border-top: 1px solid rgb(190, 190, 190);
+				}
+			}
+
+			&-item {
+				position: relative;
+				float: left;
+
+				&-link {
+					display: block;
+					padding: 20px;
+					font-family: 'Montserrat', sans-serif;
+					font-size: 1.6rem;
+					color: $pure-white;
+					text-decoration: none;
+
+					&:hover {
+						background-color: $pure-white;
+						color: $bg-color;
+					}
+				}
+			}
+		}
+	}
+}
