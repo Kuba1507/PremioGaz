@@ -1,0 +1,32 @@
+@use 'colors' as *;
+
+@media (max-width: 992px) {
+	.header {
+		.burger-btn {
+			display: block;
+		}
+
+		.navbar {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			border-top: 1px solid rgb(190, 190, 190);
+
+			&__list {
+				&--dropdown {
+					position: relative;
+					width: 100%;
+
+					li {
+						background-color: $bg-color-bright;
+					}
+				}
+
+				&-item {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
