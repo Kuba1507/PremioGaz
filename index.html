@@ -9,34 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/hamburger.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="wrapper">
-            <a href="#" class="logo"><img src="dist/img/premiogaz-logo.webp" alt="Logo firmy PremioGaz"
-                    class="logo-image"></a>
-
-            <img src="dist/img/burger-menu-button.svg" alt="Rozwijalne menu" class="burger-btn">
-
-            <nav class="navbar">
-                <ul class="navbar__list">
-                    <li class="navbar__list-item"><a href="#" class="navbar__list-item-link">Strona główna</a></li>
-                    <li class="navbar__list-item"><a href="#" class="navbar__list-item-link">O firmie</a></li>
-                    <li class="navbar__list-item"><a href="#" class="navbar__list-item-link">Oferta +</a>
-                        <ul class="navbar__list navbar__list--dropdown">
-                            <li class="navbar__list-item"><a href="#" class="navbar__list-item-link">Oferta 1</a></li>
-                            <li class="navbar__list-item"><a href="#" class="navbar__list-item-link">Oferta 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="navbar__list-item"><a href="#" class="navbar__list-item-link">Galeria</a></li>
-                    <li class="navbar__list-item"><a href="#" class="navbar__list-item-link">Kontakt</a></li>
-                    <li class="navbar__list-item"><a href="#" class="navbar__list-item-link">Facebook</a></li>
-                </ul>
-            </nav>
+        <div class="navbar wrapper">
+            <div class="wrapper">
+                <a href="#" class="navbar__logo">
+                    <img src="dist/img/premiogaz-logo.webp" alt="Logo firmy PremioGaz" class="navbar__logo-img">
+                </a>
+                <nav class="navbar__menu">
+                    <a href="#" class="navbar__menu-item">Strona główna</a>
+                    <a href="#" class="navbar__menu-item">O firmie</a>
+                    <a href="#" class="navbar__menu-item">Oferta</a>
+                    <a href="#" class="navbar__menu-item">Galeria</a>
+                    <a href="#" class="navbar__menu-item">Kontakt</a>
+                    <a href="#" class="navbar__menu-item navbar__menu-item--facebook"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path fill="#FFFFFF"
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131c.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg></a>
+                </nav>
+                <button class="hamburger hamburger--emphatic" type="button" title="Burger Menu Button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
         </div>
     </header>
+
+    <script src="dist/js/script.min.js"></script>
 </body>
 
 </html>

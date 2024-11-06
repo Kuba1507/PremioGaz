@@ -1,30 +1,53 @@
 @use 'colors' as *;
 
-@media (max-width: 992px) {
+@media (min-width: 768px) {
 	.header {
-		.burger-btn {
-			display: block;
-		}
-
 		.navbar {
-			position: absolute;
-			top: 100%;
-			left: 0;
-			right: 0;
-			border-top: 1px solid rgb(190, 190, 190);
 
-			&__list {
-				&--dropdown {
-					position: relative;
-					width: 100%;
-
-					li {
-						background-color: $bg-color-bright;
-					}
-				}
+			&__menu {
+				position: static;
+				top: inherit;
+				flex-direction: row;
+				justify-content: flex-end;
+				height: 80px;
+				width: inherit;
+				background-color: $bg-color;
+				transform: translateX(0);
 
 				&-item {
-					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 0 1em;
+					height: 100%;
+					width: auto;
+					font-size: 1.6rem;
+				}
+			}
+
+			.hamburger {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		.navbar {
+			height: 90px;
+
+			&__logo {
+				&-img {
+					width: 120px;
+				}
+			}
+
+			&__menu {
+				height: 100%;
+
+				&-item {
+					font-size: 1.7rem;
 				}
 			}
 		}
