@@ -3,6 +3,14 @@
 @media (min-width: 768px) {
 	.header {
 		.navbar {
+			height: 140px;
+
+			&__logo {
+				&-img {
+					width: 130px;
+				}
+			}
+
 			&__menu {
 				position: static;
 				top: inherit;
@@ -30,6 +38,24 @@
 			}
 		}
 	}
+
+	main {
+		.welcome-section {
+			padding-top: 140px;
+
+			.promotion-swiper {
+				.swiper-wrapper {
+					.swiper-slide {
+						font-size: 1.6rem;
+
+						&--promotion {
+							font-size: 1.4rem;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -45,6 +71,20 @@
 
 			&__menu {
 				height: 100%;
+			}
+		}
+	}
+
+	main {
+		.welcome-section {
+			.promotion-swiper {
+				.swiper-wrapper {
+					.swiper-slide {
+						&--promotion {
+							font-size: 1.5rem;
+						}
+					}
+				}
 			}
 		}
 	}

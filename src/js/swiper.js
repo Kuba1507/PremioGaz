@@ -10,11 +10,18 @@ const partnersSwiper = new Swiper('.promotion-swiper', {
 	},
 
 	breakpoints: {
-		767: {
+		410: {
 			slidesPerView: 3,
+		},
+		767: {
+			slidesPerView: 4,
 		},
 
 		992: {
+			slidesPerView: 4,
+		},
+
+		1200: {
 			slidesPerView: 5,
 		},
 	},
