@@ -8,12 +8,11 @@ const partnersSwiper = new Swiper('.promotion-swiper', {
 	autoplay: {
 		delay: 0.5,
 	},
-
 	breakpoints: {
 		410: {
 			slidesPerView: 3,
 		},
-		767: {
+		768: {
 			slidesPerView: 4,
 		},
 
@@ -28,10 +27,20 @@ const partnersSwiper = new Swiper('.promotion-swiper', {
 })
 
 const swiper = new Swiper('.main-swiper', {
-	slidesPerView: 3,
+	slidesPerView: 1,
 	loop: true,
 	autoplay: {
 		delay: 10,
+		disableOnInteraction: false,
+		pauseOnMouseEnter: true,
 	},
 	speed: 4000,
+	breakpoints: {
+		768: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+	},
 })
