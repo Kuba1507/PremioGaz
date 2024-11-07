@@ -53,3 +53,4 @@ burgerBtn.addEventListener('click', handleNav)
 mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
 })
+
