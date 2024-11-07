@@ -126,13 +126,13 @@ main {
 		padding: 3em 1em;
 	}
 
-	.company-name,
-	.subheading,
-	.subheading-description,
-	.cta-button {
-		position: relative;
-		z-index: 1;
-	}
+	// .company-name,
+	// .subheading,
+	// .subheading-description,
+	// .cta-button {
+	// 	position: relative;
+	// 	z-index: 1;
+	// }
 
 	.company-name {
 		margin-bottom: 0.25em;
@@ -227,7 +227,7 @@ main {
 					flex-direction: column;
 					align-items: flex-start;
 					justify-content: flex-end;
-					padding: 2em 1em;
+					padding: 2em 1.5em;
 					background-position: 50% 90%;
 					background-size: cover;
 					background-repeat: no-repeat;
@@ -257,6 +257,14 @@ main {
 					&.swiper-slide-next .swiper-slide__shadow {
 						background-color: rgba(0, 0, 0, 0.4);
 					}
+				}
+
+				.swiper-slide.swiper-slide-next .company-name,
+				.swiper-slide.swiper-slide-next .subheading,
+				.swiper-slide.swiper-slide-next .subheading-description,
+				.swiper-slide.swiper-slide-next .cta-button {
+					position: relative;
+					z-index: 1;
 				}
 			}
 		}

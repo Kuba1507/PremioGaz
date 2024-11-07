@@ -30,8 +30,8 @@ const partnersSwiper = new Swiper('.promotion-swiper', {
 const swiper = new Swiper('.main-swiper', {
 	slidesPerView: 3,
 	loop: true,
-	// autoplay: {
-	// 	delay: 10,
-	// },
+	autoplay: {
+		delay: 10,
+	},
 	speed: 4000,
 })
