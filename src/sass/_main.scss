@@ -135,7 +135,9 @@ main {
 	}
 
 	.company-name {
+		margin-bottom: 0.25em;
 		font-family: 'Monsterrat', sans-serif;
+		font-size: 1.7rem;
 		font-weight: 600;
 		color: $theme-red;
 		text-transform: uppercase;
@@ -145,8 +147,34 @@ main {
 		position: relative;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 600;
+		font-size: 2.9rem;
 		color: $pure-white;
 		text-transform: uppercase;
+	}
+
+	.subheading-description {
+		margin: 0.5em 0;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		color: $pure-white;
+		max-width: 350px;
+	}
+
+	.cta-button {
+		margin-top: 0.75em;
+		padding: 0.9em 1.8em;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.5rem;
+		color: $pure-white;
+		background-color: $theme-red;
+		border: none;
+		border-radius: 32px;
+		transition: background-color 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $theme-blue;
+		}
 	}
 
 	.welcome-section {
@@ -200,7 +228,7 @@ main {
 					align-items: flex-start;
 					justify-content: flex-end;
 					padding: 2em 1em;
-					background-position: center;
+					background-position: 50% 90%;
 					background-size: cover;
 					background-repeat: no-repeat;
 
