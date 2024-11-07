@@ -126,6 +126,29 @@ main {
 		padding: 3em 1em;
 	}
 
+	.company-name,
+	.subheading,
+	.subheading-description,
+	.cta-button {
+		position: relative;
+		z-index: 1;
+	}
+
+	.company-name {
+		font-family: 'Monsterrat', sans-serif;
+		font-weight: 600;
+		color: $theme-red;
+		text-transform: uppercase;
+	}
+
+	.subheading {
+		position: relative;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		color: $pure-white;
+		text-transform: uppercase;
+	}
+
 	.welcome-section {
 		padding-top: 100px;
 
@@ -168,13 +191,15 @@ main {
 		.main-swiper {
 			width: 100%;
 			height: 450px;
-			background-color: yellow;
 
 			.swiper-wrapper {
 				.swiper-slide {
+					position: relative;
 					display: flex;
-					align-items: center;
-					justify-content: center;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: flex-end;
+					padding: 2em 1em;
 					background-position: center;
 					background-size: cover;
 					background-repeat: no-repeat;
@@ -189,6 +214,20 @@ main {
 
 					&--third-slide {
 						background-image: url('../img/slide-3.webp');
+					}
+
+					&__shadow {
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						background-color: rgba(0, 0, 0, 0.8);
+						transition: background-color 0.4s ease-out;
+					}
+
+					&.swiper-slide-next .swiper-slide__shadow {
+						background-color: rgba(0, 0, 0, 0.4);
 					}
 				}
 			}
