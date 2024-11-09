@@ -336,6 +336,52 @@ main {
 			}
 		}
 	}
+
+	.offers {
+		background-color: $bg-color-dark;
+
+		.wrapper {
+			.offers-box {
+				display: flex;
+				flex-direction: column;
+				margin-top: 2em;
+
+				&__element {
+					display: flex;
+					flex-direction: column;
+
+					&-img {
+						aspect-ratio: 5/3;
+						object-fit: cover;
+					}
+
+					&-text {
+						&-title {
+							margin-top: 1em;
+							font-family: 'Montserrat', sans-serif;
+							font-size: 2.1rem;
+							font-weight: 600;
+							color: $theme-blue;
+							text-transform: uppercase;
+						}
+
+						&-description {
+							margin-top: 0.5em;
+							font-size: 1.4rem;
+						}
+
+						.cta-button {
+							margin-top: 1.25em;
+						}
+					}
+				}
+
+				.offers-box__element:not(:last-child) {
+					margin-bottom: 3em;
+				}
+			}
+		}
+	}
 }
 
 @keyframes navItemsAnimation {
