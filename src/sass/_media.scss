@@ -2,6 +2,18 @@
 
 @media (max-width: 768px) {
 	main {
+		.main-heading {
+			font-size: 2.9rem;
+		}
+
+		.subheading {
+			font-size: 2.5rem;
+		}
+
+		.default-text {
+			font-size: 1.6rem;
+		}
+
 		.welcome-section {
 			.main-swiper {
 				.swiper-wrapper {
@@ -111,6 +123,34 @@
 						&--check {
 							width: 11% !important;
 						}
+					}
+				}
+			}
+		}
+
+		.about-us {
+			.wrapper {
+				.about-box {
+					flex-direction: row;
+					align-items: flex-start;
+					margin-top: 3em;
+
+					&__image {
+						margin-top: 0;
+						padding-left: 1.5em;
+					}
+				}
+
+				.about-box-images {
+					flex-direction: row;
+					justify-content: space-between;
+
+					&__photo {
+						width: 49%;
+					}
+
+					&__photo:nth-child(1) {
+						margin-bottom: 0;
 					}
 				}
 			}

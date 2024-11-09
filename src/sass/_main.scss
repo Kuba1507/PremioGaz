@@ -128,20 +128,28 @@ main {
 
 	.company-name {
 		margin-bottom: 0.25em;
-		font-family: 'Monsterrat', sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 1.7rem;
 		font-weight: 600;
 		color: $theme-red;
 		text-transform: uppercase;
 	}
 
+	.main-heading,
 	.subheading {
 		position: relative;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 600;
-		font-size: 2.9rem;
 		color: $pure-white;
 		text-transform: uppercase;
+	}
+
+	.main-heading {
+		font-size: 3.3rem;
+	}
+
+	.subheading {
+		font-size: 2.6rem;
 	}
 
 	.subheading-description {
@@ -150,6 +158,13 @@ main {
 		font-weight: 600;
 		color: $pure-white;
 		max-width: 350px;
+	}
+
+	.default-text {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.8rem;
+		font-weight: 500;
+		color: $pure-white;
 	}
 
 	.cta-button {
@@ -257,6 +272,44 @@ main {
 				.swiper-slide.swiper-slide-next .cta-button {
 					position: relative;
 					z-index: 1;
+				}
+			}
+		}
+	}
+
+	.about-us {
+		.wrapper {
+			.about-box {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 2em;
+
+				&__text {
+					.default-text:not(:last-child) {
+						margin-bottom: 0.75em;
+					}
+				}
+
+				&__image {
+					margin-top: 2em;
+					width: 95%;
+					max-width: 450px;
+				}
+			}
+
+			.about-box-images {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 2em;
+
+				&__photo {
+					width: 95%;
+				}
+
+				&__photo:nth-child(1) {
+					margin-bottom: 2em;
 				}
 			}
 		}
