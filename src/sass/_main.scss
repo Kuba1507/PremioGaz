@@ -312,6 +312,18 @@ main {
 					margin-bottom: 2em;
 				}
 			}
+
+			.about-safety {
+				margin-top: 3em;
+
+				.default-text:first-of-type {
+					margin-top: 2em;
+				}
+
+				.default-text:not(:last-child) {
+					margin-bottom: 0.75em;
+				}
+			}
 		}
 	}
 }
