@@ -280,6 +280,7 @@ main {
 	.about-us {
 		.wrapper {
 			.about-box {
+				position: relative;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -295,6 +296,15 @@ main {
 					margin-top: 2em;
 					width: 95%;
 					max-width: 450px;
+				}
+
+				&__decoration-img {
+					display: none;
+					position: absolute;
+					right: -180px;
+					bottom: -150px;
+					width: 800px;
+					z-index: -1;
 				}
 			}
 
