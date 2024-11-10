@@ -91,6 +91,29 @@
 				}
 			}
 		}
+
+		.offers {
+			.wrapper {
+				.offers-box {
+					&__element {
+						flex-direction: row;
+						align-items: center;
+
+						&-img {
+							width: 50%;
+						}
+
+						&-text {
+							margin-left: 1em;
+
+							&-title {
+								margin-top: 0;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -155,6 +178,48 @@
 
 					&__photo:nth-child(1) {
 						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		.offers {
+			.wrapper {
+				.offers-box {
+					&__element {
+						&-img {
+							width: 40%;
+						}
+
+						&-text {
+							margin-left: 2em;
+
+							&-title {
+								font-size: 2.2rem;
+							}
+
+							&-description {
+								margin-top: 1em;
+								font-size: 1.5rem;
+								max-width: 550px;
+							}
+
+							.cta-button {
+								margin-top: 1.75em;
+							}
+
+							.custom-max-width-one {
+								max-width: 330px;
+							}
+
+							.custom-max-width-two {
+								max-width: 140px;
+							}
+						}
+					}
+
+					.offers-box__element:not(:last-child) {
+						margin-bottom: 4em;
 					}
 				}
 			}
