@@ -45,9 +45,12 @@ const swiper = new Swiper('.main-swiper', {
 	},
 })
 
-const testimonialsSwiper = new Swiper(".testimonials-swiper", {
+const testimonialsSwiper = new Swiper('.testimonials-swiper', {
 	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
-  });
+	pagination: {
+		el: '.swiper-pagination',
+	},
+})

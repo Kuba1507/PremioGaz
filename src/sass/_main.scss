@@ -423,18 +423,22 @@ main {
 						}
 
 						.testimonial {
-							margin-bottom: 1em;
+							margin-bottom: 1.25em;
 							font-family: 'Montserrat', sans-serif;
 							font-size: 1.5rem;
 						}
 
 						.testimonial-author {
-							margin-bottom: 0.25em;
+							margin-bottom: 0.5em;
 							font-family: 'Poppins', sans-serif;
 							font-size: 1.6rem;
 							font-weight: bold;
 						}
 					}
+				}
+
+				.swiper-pagination {
+					// bottom: -20px;
 				}
 			}
 		}
