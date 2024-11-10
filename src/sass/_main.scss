@@ -384,6 +384,61 @@ main {
 			}
 		}
 	}
+
+	.testimonials {
+		background-color: $bg-color-dark;
+
+		&-two {
+			.testimonials-swiper {
+				margin-top: 2em;
+
+				.swiper-button-next,
+				.swiper-button-prev {
+					display: none;
+				}
+
+				.swiper-wrapper {
+					.swiper-slide {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-around;
+						padding: 1em;
+						border: 2px solid $theme-blue;
+						border-radius: 8px;
+
+						.stars-box {
+							margin-top: 0.5em;
+							margin-bottom: 1em;
+
+							&__star {
+								margin: 0 -0.15em;
+								width: 25px;
+								height: 25px;
+							}
+						}
+
+						.testimonial,
+						.testimonial-author {
+							color: $pure-white;
+						}
+
+						.testimonial {
+							margin-bottom: 1em;
+							font-family: 'Montserrat', sans-serif;
+							font-size: 1.5rem;
+						}
+
+						.testimonial-author {
+							margin-bottom: 0.25em;
+							font-family: 'Poppins', sans-serif;
+							font-size: 1.6rem;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @keyframes navItemsAnimation {
