@@ -2,6 +2,7 @@ const body = document.querySelector('body')
 const burgerBtn = document.querySelector('.hamburger')
 const mobileNav = document.querySelector('.navbar__menu')
 const mobileNavItems = document.querySelectorAll('.navbar__menu-item')
+const spanYearFooter = document.querySelector('#custom-footer-year')
 
 const handleNav = () => {
 	if (burgerBtn.classList.contains('is-active')) {
@@ -49,8 +50,13 @@ const removeNavItemsAnimation = () => {
 	})
 }
 
+const handleFooterYear = () => {
+	const year = new Date().getFullYear()
+	spanYearFooter.textContent = year
+}
+
 burgerBtn.addEventListener('click', handleNav)
 mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
 })
-
+document.addEventListener('DOMContentLoaded', handleFooterYear)
