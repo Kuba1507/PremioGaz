@@ -392,11 +392,6 @@ main {
 			.testimonials-swiper {
 				margin-top: 2em;
 
-				.swiper-button-next,
-				.swiper-button-prev {
-					display: none;
-				}
-
 				.swiper-wrapper {
 					.swiper-slide {
 						display: flex;
@@ -437,8 +432,21 @@ main {
 					}
 				}
 
-				.swiper-pagination {
-					// bottom: -20px;
+				.swiper-button-prev,
+				.swiper-button-next {
+					display: none;
+				}
+
+				.swiper-button-prev::after,
+				.swiper-button-next::after {
+					font-size: 3rem;
+					color: $theme-blue;
+				}
+			}
+
+			.swiper-pagination {
+				.swiper-pagination-bullet {
+					background: $theme-blue;
 				}
 			}
 		}

@@ -224,5 +224,49 @@
 				}
 			}
 		}
+
+		.testimonials {
+			.wrapper {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+
+				.testimonials-two {
+					max-width: 600px;
+
+					.testimonials-swiper {
+						margin-top: 0;
+
+						.swiper-wrapper {
+							.swiper-slide {
+								padding: 1em 4em;
+
+								.stars-box {
+									margin-top: 1em;
+								}
+
+								.testimonial {
+									margin-bottom: 1.7em;
+									font-size: 1.7rem;
+								}
+
+								.testimonial-author {
+									font-size: 1.8rem;
+								}
+							}
+						}
+
+						.swiper-button-prev,
+						.swiper-button-next {
+							display: flex;
+						}
+					}
+
+					.swiper-pagination {
+						display: none;
+					}
+				}
+			}
+		}
 	}
 }
