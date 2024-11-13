@@ -10,7 +10,7 @@
 
 html {
 	font-size: 62.5%;
-	scroll-padding-top: 50px;
+	scroll-padding-top: 110px;
 	scroll-behavior: smooth;
 }
 
@@ -79,7 +79,7 @@ body {
 				color: $pure-white;
 				text-align: center;
 				text-decoration: none;
-				transition: background-color 0.3s;
+				transition: color 0.3s;
 
 				img {
 					width: 30px;
@@ -87,7 +87,7 @@ body {
 				}
 
 				&:hover {
-					background-color: $theme-blue;
+					color: $theme-blue;
 				}
 
 				&--facebook {

@@ -46,11 +46,11 @@ const swiper = new Swiper('.main-swiper', {
 })
 
 const testimonialsSwiper = new Swiper('.testimonials-swiper', {
+	autoplay: {
+		delay: 3000,
+	},
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
-	},
-	pagination: {
-		el: '.swiper-pagination',
 	},
 })
