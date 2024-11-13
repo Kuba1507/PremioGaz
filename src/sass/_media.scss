@@ -115,6 +115,33 @@
 			}
 		}
 	}
+
+	.footer {
+		.footer-up {
+			padding: 2em;
+
+			&__logo {
+				width: 30%;
+			}
+		}
+
+		.footer-down {
+			padding: 1.5em;
+
+			.wrapper {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			&__left {
+				display: flex;
+
+				p {
+					margin-right: 1em;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -264,6 +291,32 @@
 
 					.swiper-pagination {
 						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		.footer-up {
+			padding: 2em 0 1em 0;
+
+			&__logo {
+				width: 15%;
+			}
+
+			&__box {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 3em;
+
+				&-part {
+					h3 {
+						font-size: 2rem;
+					}
+
+					p {
+						font-size: 1.7rem;
 					}
 				}
 			}

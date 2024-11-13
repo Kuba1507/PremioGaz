@@ -518,7 +518,26 @@ main {
 
 	.footer-down {
 		padding: 1em;
+		font-family: 'Poppins', sans-serif;
+		color: $pure-white;
 		background-color: #0d0d0d;
+		text-align: center;
+
+		&__left {
+			a {
+				color: $pure-white;
+				text-decoration: underline;
+			}
+		}
+
+		&__right {
+			p {
+				a {
+					color: $pure-white;
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 }
 
