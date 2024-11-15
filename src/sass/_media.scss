@@ -37,6 +37,23 @@
 }
 
 @media (min-width: 768px) {
+	.individual-promotion-popup {
+		height: 550px;
+
+		.text-background {
+			padding: 1.5em;
+
+			p {
+				font-size: 2rem;
+			}
+		}
+
+		&-close {
+			width: 70px;
+			height: 70px;
+		}
+	}
+
 	.header {
 		.navbar {
 			height: 140px;
@@ -145,6 +162,10 @@
 }
 
 @media (min-width: 992px) {
+	.individual-promotion-popup {
+		width: 60%;
+	}
+
 	.header {
 		.navbar {
 			height: 140px;

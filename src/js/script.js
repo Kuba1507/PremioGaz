@@ -60,7 +60,8 @@ const handleFooterYear = () => {
 }
 
 const showPromotionPopup = () => {
-	
+	promotionPopup.style.display = 'flex'
+	promotionShadow.style.display = 'block'
 }
 
 const closePromotionPopup = () => {
@@ -76,4 +77,5 @@ promotionBtn.forEach(btn => {
 	btn.addEventListener('click', showPromotionPopup)
 })
 promotionClose.addEventListener('click', closePromotionPopup)
+promotionShadow.addEventListener('click', closePromotionPopup)
 document.addEventListener('DOMContentLoaded', handleFooterYear)
