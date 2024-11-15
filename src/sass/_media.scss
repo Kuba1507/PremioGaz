@@ -323,3 +323,13 @@
 		}
 	}
 }
+
+@media (min-width: 1600px) {
+	main {
+		.offers {
+			&__decor {
+				display: block;
+			}
+		}
+	}
+}

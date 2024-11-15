@@ -29,10 +29,61 @@ body {
 	overflow-y: hidden;
 }
 
+.individual-promotion-popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	height: 400px;
+	background-image: url('../img/promocja.webp');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+
+	.text-background {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1em;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		text-align: center;
+
+		p {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.7rem;
+			color: $pure-white;
+		}
+	}
+
+	&-close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70px;
+		height: 70px;
+		cursor: pointer;
+	}
+}
+
+.individual-promotion-popup-shadow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 998;
+}
+
 .header {
 	position: fixed;
 	width: 100%;
-	z-index: 999;
+	z-index: 997;
 
 	.navbar {
 		height: 100px;
@@ -341,9 +392,13 @@ main {
 	}
 
 	.offers {
+		position: relative;
 		background-color: $bg-color-dark;
 
 		.wrapper {
+			position: relative;
+			z-index: 2;
+
 			.offers-box {
 				display: flex;
 				flex-direction: column;
@@ -383,6 +438,16 @@ main {
 					margin-bottom: 3em;
 				}
 			}
+		}
+
+		&__decor {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			display: none;
+			width: 500px;
+			transform: scaleX(-1);
+			z-index: 1;
 		}
 	}
 

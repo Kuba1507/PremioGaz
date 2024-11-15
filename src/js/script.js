@@ -3,6 +3,10 @@ const burgerBtn = document.querySelector('.hamburger')
 const mobileNav = document.querySelector('.navbar__menu')
 const mobileNavItems = document.querySelectorAll('.navbar__menu-item')
 const spanYearFooter = document.querySelector('#custom-footer-year')
+const promotionBtn = document.querySelectorAll('.individual-promotion')
+const promotionPopup = document.querySelector('.individual-promotion-popup')
+const promotionShadow = document.querySelector('.individual-promotion-popup-shadow')
+const promotionClose = document.querySelector('.individual-promotion-popup-close')
 
 const handleNav = () => {
 	if (burgerBtn.classList.contains('is-active')) {
@@ -55,8 +59,21 @@ const handleFooterYear = () => {
 	spanYearFooter.textContent = year
 }
 
+const showPromotionPopup = () => {
+	
+}
+
+const closePromotionPopup = () => {
+	promotionPopup.style.display = 'none'
+	promotionShadow.style.display = 'none'
+}
+
 burgerBtn.addEventListener('click', handleNav)
 mobileNavItems.forEach(item => {
 	item.addEventListener('click', closeNav)
 })
+promotionBtn.forEach(btn => {
+	btn.addEventListener('click', showPromotionPopup)
+})
+promotionClose.addEventListener('click', closePromotionPopup)
 document.addEventListener('DOMContentLoaded', handleFooterYear)
