@@ -338,6 +338,45 @@ main {
 				}
 			}
 		}
+
+		.breadcrumb-box {
+			display: flex;
+			align-items: center;
+			padding: 1em;
+
+			&__link {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				color: $theme-blue;
+				text-decoration: none;
+			}
+
+			&__icon {
+				margin: 0 0.5em;
+				width: 20px;
+				height: 20px;
+
+				path {
+					fill: $theme-blue;
+				}
+			}
+		}
+
+		.gallery-box {
+			display: flex;
+			flex-direction: column;
+			margin-top: 1em;
+
+			&__row {
+				display: flex;
+				flex-direction: column;
+
+				&-img {
+					width: 100%;
+					height: 400px;
+				}
+			}
+		}
 	}
 
 	.about-us {

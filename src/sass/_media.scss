@@ -109,6 +109,18 @@
 					}
 				}
 			}
+
+			.gallery-box {
+				&__row {
+					flex-direction: row;
+					flex-wrap: wrap;
+					width: 100%;
+
+					&-img {
+						width: 50%;
+					}
+				}
+			}
 		}
 
 		.offers {
