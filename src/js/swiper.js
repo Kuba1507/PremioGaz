@@ -2,7 +2,7 @@ const partnersSwiper = new Swiper('.promotion-swiper', {
 	slidesPerView: '2',
 	loop: true,
 	centeredSlides: true,
-	speed: 2500,
+	speed: 3500,
 	allowTouchMove: false,
 	disableOnInteraction: false,
 	autoplay: {
