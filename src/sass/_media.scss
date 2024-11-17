@@ -111,14 +111,12 @@
 			}
 
 			.gallery-box {
-				&__row {
-					flex-direction: row;
-					flex-wrap: wrap;
-					width: 100%;
+				flex-direction: row;
+				flex-wrap: wrap;
 
-					&-img {
-						width: 50%;
-					}
+				&-img {
+					width: 50%;
+					height: 370px;
 				}
 			}
 		}
@@ -209,6 +207,15 @@
 							width: 11% !important;
 						}
 					}
+				}
+			}
+
+			.gallery-box {
+				margin-top: 2em;
+
+				&-img {
+					width: 25%;
+					height: 500px;
 				}
 			}
 		}
