@@ -138,6 +138,10 @@
 							&-title {
 								margin-top: 0;
 							}
+
+							&-description {
+								margin-bottom: 2.5em;
+							}
 						}
 					}
 				}
@@ -167,6 +171,18 @@
 
 				p {
 					margin-right: 1em;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.header {
+		.wrapper {
+			.navbar__menu {
+				.navbar__menu-item--facebook {
+					display: none;
 				}
 			}
 		}
