@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/css/hamburger.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
@@ -327,10 +328,10 @@
                 </div>
                 <div class="about-box-images">
                     <img src="dist/img/about-1.webp" alt="Flota samochodowa firmy PremioGaz"
-                        class="about-box-images__photo">
+                        class="about-box-images__photo" data-aos="fade-right">
                     <img src="dist/img/about-2.webp"
                         alt="Zbliżenie na drzwi samochodu dostawczego firmy PremioGaz z naklejonym logo"
-                        class="about-box-images__photo">
+                        class="about-box-images__photo" data-aos="fade-left" data-aos-delay="300">
                 </div>
                 <div class="about-safety">
                     <h2 class="subheading">bezpieczeństwo to nasz priorytet</h2>
@@ -360,7 +361,7 @@
                 <p class="company-name">sprawdź usługi</p>
                 <h2 class="subheading">nasza oferta</h2>
                 <div class="offers-box">
-                    <div class="offers-box__element" id="gospodarstwa-domowe">
+                    <div class="offers-box__element" id="gospodarstwa-domowe" data-aos="zoom-in">
                         <img src="dist/img/slide-2.webp" alt="Gotujący się na patelni na kuchence gazowej naleśnik"
                             class="offers-box__element-img">
                         <div class="offers-box__element-text">
@@ -374,7 +375,7 @@
                             <a href="https://premiogaz.pl/#kontakt" class="cta-button">Skontaktuj się</a>
                         </div>
                     </div>
-                    <div class="offers-box__element" id="przemysl-i-rolnictwo">
+                    <div class="offers-box__element" id="przemysl-i-rolnictwo" data-aos="zoom-in" data-aos-delay="300">
                         <img src="dist/img/slide-3.webp" alt="Gotujący się na patelni na kuchence gazowej naleśnik"
                             class="offers-box__element-img">
                         <div class="offers-box__element-text">
@@ -387,7 +388,7 @@
                             <a href="https://premiogaz.pl/#kontakt" class="cta-button">Skontaktuj się</a>
                         </div>
                     </div>
-                    <div class="offers-box__element" id="wozki-widlowe">
+                    <div class="offers-box__element" id="wozki-widlowe" data-aos="zoom-in" data-aos-delay="600">
                         <img src="dist/img/slide-1.webp" alt="Gotujący się na patelni na kuchence gazowej naleśnik"
                             class="offers-box__element-img">
                         <div class="offers-box__element-text">
@@ -527,7 +528,9 @@
         </div>
     </div>
     <div class="individual-promotion-popup-shadow"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="dist/js/aos.min.js"></script>
     <script src="dist/js/swiper.min.js"></script>
     <script src="dist/js/script.min.js"></script>
 </body>
