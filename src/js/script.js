@@ -3,6 +3,7 @@ const burgerBtn = document.querySelector('.hamburger')
 const mobileNav = document.querySelector('.navbar__menu')
 const mobileNavItems = document.querySelectorAll('.navbar__menu-item')
 const spanYearFooter = document.querySelector('#custom-footer-year')
+const spanYearFooterSecond = document.querySelector('#custom-footer-year-second')
 const promotionBtn = document.querySelectorAll('.individual-promotion')
 const promotionPopup = document.querySelector('.individual-promotion-popup')
 const promotionShadow = document.querySelector('.individual-promotion-popup-shadow')
@@ -57,6 +58,7 @@ const removeNavItemsAnimation = () => {
 const handleFooterYear = () => {
 	const year = new Date().getFullYear()
 	spanYearFooter.textContent = year
+	spanYearFooterSecond.textContent = year
 }
 
 const showPromotionPopup = () => {
